@@ -1,25 +1,25 @@
-// function erklærer en funksjon
-// addTodo er navnet til funksjonen
-// () setter opp parameter (ikke brukt i dette tilfellet)
-// {} lager en "ramme" hvor vi skal kode innenfor i denne funksjonen
+// This function declares a function
+// addTodo is the name of the function
+// () sets up parameters (not used in this case)
+// {} creates a "frame" where we will code within this function
 function addTodo() {
-    // event er en hendelse. JS markerer som utgått fordi den vil vi skal bruke e.
-    //.preventDefault() er en metode som stopper nettleseren fra å gjøre det som vil automatisk skje. I dette tilfellet: stopper nettleseren fra å oppdatere etter trykk på knapp
+    // event is an event. JS marks it as deprecated because it wants us to use e.
+    //.preventDefault() is a method that prevents the browser from doing what would happen automatically. In this case: stops the browser from refreshing after clicking a button
     event.preventDefault();
 
-    // console er en del av inspiser og gir oss mulighet til å se hva som skjer i JS
-    // .log() er metoden for å logge noe til console som gir oss muligheten til å sjekke koden våres
-    // "Is button clicked?" er setningen vi får opp i console om koden er riktig
+    // console is part of the inspector and allows us to see what is happening in JS
+    // .log() is the method to log something to the console which allows us to check our code
+    // "Is button clicked?" is the sentence we see in the console if the code is correct
     console.log("Is button clicked?")
 
-    // const er å erklære en variable
-    // taskInputData er et variabel navn
-    // = å erklære en verdi som skal lagres
-    // document refererer til HTML dokumentet
-    // .querySelector() henter noe fra HTML
-    // #taskInput er id-navnet til elementet vi henter fra HTML
-    // .value er at vi henter innholdet til elementet
-    // ; betyr full stopp. Denne linjen med kode er ferdig
+    // const is declaring a variable
+    // taskInputData is a variable name
+    // = is declaring a value to be stored
+    // document refers to the HTML document
+    // .querySelector() retrieves something from HTML
+    // #taskInput is the id name of the element we are retrieving from HTML
+    // .value is that we retrieve the content of the element
+    // ; means full stop. This line of code is finished
     const taskInputData = document.querySelector("#taskInput").value;
 
     //
