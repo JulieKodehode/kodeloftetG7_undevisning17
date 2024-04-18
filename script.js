@@ -22,32 +22,39 @@ function addTodo() {
     // ; means full stop. This line of code is finished
     const taskInputData = document.querySelector("#taskInput").value;
 
-    //
+    // Checking that the variable taskInputData returnes the desired value
     console.log(taskInputData);
 
-    //
+    // Creating a new element
     const newListItem = document.createElement("li");
-    //
+
+    // Checking if we created the correct element
     console.log(newListItem);
 
-    //
+    // Add a class to the newly created element
+    newListItem.classList.add("taskListItem");
+
+    // Add content to the newly created element from the input value
     newListItem.textContent = taskInputData;
 
-    //
+    // Getting the ul element from the HTML document
     const taskList = document.querySelector("#taskList");
 
-    //
+    // Chekcing if we got the correct element
     console.log(taskList);
 
-    //
+    // Adding the new element we created back to the desired element from the HTML document
     taskList.appendChild(newListItem);
+
+    // Removing the content from input now that we have value returned to the list
+    document.querySelector("#taskInput").value = ""
 }
 
-//
+// Getting the button element from the HTML document
 const taskButton = document.querySelector("#taskButton");
 
-//
+// Checking if we got the correct element
 console.log(taskButton);
 
-//
+// Adding an event to the button, that runs the function above
 taskButton.addEventListener("click", addTodo);
