@@ -7,5 +7,34 @@
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <!-- 
+      Todo application:
+      1. A place to write the todo
+        - HTML Form
+      2. A button that sends the todo to javascript
+        - Event listner
+      3. A function that prossesses the todo
+        - DOM Manipulation
+      4. A list to return the prossessed todo to
+        - DOM Manipulasjon connecting step 1-3
+    -->
+
+    <main>
+      <form>
+        <label for="taskInput">
+          Write a todo
+          <input type="text" name="taskInput" id="taskInput">
+        </label>
+
+        <button id="taskButton">Add todo</button>
+      </form>
+
+      <ul id="taskList">
+        <!-- Placeholder -->
+        <li>Walk the dog</li>
+        
+      </ul>
+    </main>
+  </body>
 </html>
